@@ -3,10 +3,10 @@ import mysql.connector
 # função para conectar ao banco de dados
 def conectar():
     return mysql.connector.connect(
-        host="localhost",       
-        user="root",    
-        password="1203",   
-        database="sistema_acesso"
+        host="",       
+        user="",    
+        password="",   
+        database=""
     )
 
 # função para verificar se a placa está no banco de dados e retornar o nome do proprietário
