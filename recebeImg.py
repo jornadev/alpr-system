@@ -5,8 +5,8 @@ from datetime import datetime
 import os
 
 # URL do feed de imagem da ESP32-CAM
-esp32_url = "http://172.20.10.7/jpg"  
-save_folder = "C:\imagensesp32"
+esp32_url = ""  
+save_folder = ""
 
 # cria a pasta se ela não existir
 if not os.path.exists(save_folder):
