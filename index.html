@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Portaria</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <button onclick="mostrarSecao('autorizacoes')">Placas Autorizadas</button>
+        <button onclick="mostrarSecao('historico')">Histórico de Acessos</button>
+    </div>
+
+    <div class="content">
+        <header>
+            <h1>Controle de Portaria do Condomínio</h1>
+        </header>
+
+        <div class="container" id="autorizacoes">
+            <section>
+                <div class="section-header">
+                    <h2>Placas Autorizadas</h2>
+                    <button onclick="atualizarAutorizacoes()">Atualizar</button>
+                </div>
+                <ul id="listaAutorizacoes"></ul>
+                
+                <div class="add-remove-form">
+                    <h3>Adicionar Nova Placa</h3>
+                    <input type="text" id="novaPlaca" placeholder="Placa">
+                    <input type="text" id="proprietario" placeholder="Proprietário">
+                    <button onclick="adicionarPlaca()">Adicionar</button>
+
+                    <h3>Remover Placa</h3>
+                    <input type="text" id="placaRemover" placeholder="Placa">
+                    <button onclick="removerPlaca()">Remover</button>
+                </div>
+            </section>
+        </div>
+
+        <div class="container" id="historico" style="display: none;">
+            <section>
+                <div class="section-header">
+                    <h2>Histórico de Acessos</h2>
+                    <button onclick="atualizarHistorico()">Atualizar</button>
+                </div>
+                <ul id="listaHistorico"></ul>
+            </section>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
