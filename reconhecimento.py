@@ -6,7 +6,7 @@ from watchdog.events import FileSystemEventHandler
 from database import verificar_placa, registrar_entrada  # Importa as funções do banco de dados
 from servo_control import enviar_comando_abrir
 
-pytesseract.pytesseract.tesseract_cmd = "C:\\Tesseract-OCR\\Tesseract.exe"
+pytesseract.pytesseract.tesseract_cmd = "C:\\Tesseract-OCR\\Tesseract.exe" #temoa que passar o executavel do tesseract
 # pasta que puxaremos as imagens
 image_folder = r"C:\imagensesp32"
 
