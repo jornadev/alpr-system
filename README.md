@@ -33,27 +33,6 @@ Este projeto tem como objetivo automatizar o controle de acesso veicular utiliza
 - (Opcional) Flask  
 - Bibliotecas da ESP32 instaladas no Arduino IDE
 
-## 🔌 Instalação
-
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/alpr_system.git
-   ```
-2. Instale as dependências:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Configure o banco de dados MySQL com as placas autorizadas.
-4. Execute o servidor Python:
-   ```bash
-   python main.py
-   ```
-5. Faça o upload do código da ESP32-CAM usando o Arduino IDE.
-
-## 📷 Demonstração
-
-> *(Adicione aqui imagens ou gifs mostrando o funcionamento do sistema)*
-
 ## 👨‍💻 Autor
 
 Desenvolvido por **[Henrique Jornada]**, estudante de Ciência da Computação.  
